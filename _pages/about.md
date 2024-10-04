@@ -48,6 +48,6 @@ You can find a list of all the publications at my Google Scholar or Researchgate
       <li>Implemented hybrid deep reinforcement learning for path tracking.</li>
       <li>Addressed challenges of rough terrain navigation.</li>
       <li>Achieved robust performance in diverse conditions.</li>
-      <li>Accepted at 2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics ![AIM](https://ieeexplore.ieee.org/abstract/document/10636992)</li>
+      <li>Accepted at 2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics [AIM](https://ieeexplore.ieee.org/abstract/document/10636992)</li>
     </ul>
   </div>
