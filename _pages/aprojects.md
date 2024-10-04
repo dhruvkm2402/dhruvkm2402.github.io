@@ -63,7 +63,7 @@ author_profile: true
 
  <div class="video-container">
   <h2>Real Time 3D Scene Reconstruction using NVIDIA Isaac ROS Nvblox in Simulation and Reality</h2>
-  <video width="100%" controls autoplay loop muted>
+  <video width="50%" controls autoplay loop muted>
     <source src="/files/3dscene.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
