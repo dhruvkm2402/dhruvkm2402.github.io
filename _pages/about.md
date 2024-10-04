@@ -19,7 +19,7 @@ You can find a list of all the publications at my Google Scholar or Researchgate
   <!-- Project 1 -->
   <div style="flex: 1; margin: 10px;">
     <h2>Deep Reinforcement Learning for Coordinated Payload Transport in Biped-Wheeled Robots</h2>
-    <video width="200%" controls autoplay loop muted>
+    <video width="100%" controls autoplay loop muted>
       <source src="/files/dualdiablo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
