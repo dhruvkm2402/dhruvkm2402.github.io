@@ -14,7 +14,7 @@ author_profile: true
  </div>
 
  <div class="image-container" style="text-align: center;">
-  <img src="/images/autotechday.jpg" alt="Auto Tech Day" style="max-width: 500px;">
+  <img src="/images/autotechday.png" alt="Auto Tech Day" style="max-width: 500px;">
   <ul style="list-style-type: disc; text-align: left; margin: 0 auto; display: inline-block;">
     <li>Demonstrated autonomous robots and driverless vehicle research capabilities of Automation, Mechatronics and Robotics Laboratory (ARM Lab)</li>
   </ul>
