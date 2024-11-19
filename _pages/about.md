@@ -27,9 +27,9 @@ You can find a list of all the publications at my Google Scholar or Researchgate
       <a href="/files/DhruvM_CoordinatedPayload_Preprint_2024.pdf" target="_blank">PDF</a>
     </p>
     <ul>
-      <li>Developed a coordinated payload transport algorithm for biped-wheeled robots</li>
+      <li>Developed a coordinated payload transport algorithm for biped-wheeled robots in Isaac Lab</li>
       <li>Utilized a single Deep Reinforcement Learning agent to control two robots</li>
-      <li>Achieved zero-shot Sim2Real transfer</li>
+      <li>Achieved zero-shot Sim2Real transfer using ROS, ONNX and OptiTrack Motion Capture</li>
     </ul>
   </div>
 
@@ -45,9 +45,9 @@ You can find a list of all the publications at my Google Scholar or Researchgate
       <a href="/files/RoughTerrain_Ackerman_HybridDRL___Dhruv_Ameya_AIM2024_FinalV1.pdf" target="_blank">PDF</a>
     </p>
     <ul>
-      <li>Implemented hybrid deep reinforcement learning for path tracking.</li>
-      <li>Addressed challenges of rough terrain navigation.</li>
-      <li>Achieved robust performance in diverse conditions.</li>
+      <li>Implemented hybrid deep reinforcement learning for path tracking in Isaac Gym</li>
+      <li>Addressed challenges of rough terrain navigation</li>
+      <li>Achieved robust performance in diverse conditions</li>
       <li>Accepted at 2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics <a href="https://ieeexplore.ieee.org/abstract/document/10636992" target="_blank">(AIM)</a>
 </li>
     </ul>
