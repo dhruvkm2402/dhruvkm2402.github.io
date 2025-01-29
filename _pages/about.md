@@ -30,6 +30,7 @@ You can find a list of all the publications at my Google Scholar or Researchgate
       <li>Developed a coordinated payload transport algorithm for biped-wheeled robots in Isaac Lab</li>
       <li>Utilized a single Deep Reinforcement Learning agent to control two robots</li>
       <li>Achieved zero-shot Sim2Real transfer using ROS, ONNX and OptiTrack Motion Capture</li>
+      <li>Accepted for the flagship 2025 IEEE International Conference on Robotics & Automation (<a href="https://2025.ieee-icra.org/" target="_blank">(ICRA)</a>), 19–23 May, Atlanta, USA</li>
     </ul>
   </div>
 
