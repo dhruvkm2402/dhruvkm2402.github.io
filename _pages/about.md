@@ -24,7 +24,8 @@ You can find a list of all the publications at my Google Scholar or Researchgate
       Your browser does not support the video tag.
     </video>
     <p>
-      <a href="/files/DhruvM_CoordinatedPayload_Preprint_2024.pdf" target="_blank">PDF</a>
+      <a href="https://github.com/dhruvkm2402/Deep_Reinforcement_Learning_Multi_Robot_Payload_Transport" target="_blank">Code</a> |
+      <a href="/files/DualDiablo_CoordinatedPayload_Transport_ICRA2025_Final.pdf" target="_blank">Paper</a>
     </p>
     <ul>
       <li>Developed a coordinated payload transport algorithm for biped-wheeled robots in Isaac Lab</li>
@@ -43,7 +44,7 @@ You can find a list of all the publications at my Google Scholar or Researchgate
     </video>
     <p>
       <a href="https://github.com/dhruvkm2402/Hybrid_Deep_Reinforcement_Learning_RoughTerrain" target="_blank">Code</a> |
-      <a href="/files/RoughTerrain_Ackerman_HybridDRL___Dhruv_Ameya_AIM2024_FinalV1.pdf" target="_blank">PDF</a>
+      <a href="/files/RoughTerrain_Ackerman_HybridDRL___Dhruv_Ameya_AIM2024_FinalV1.pdf" target="_blank">Paper</a>
     </p>
     <ul>
       <li>Implemented hybrid deep reinforcement learning for path tracking in Isaac Gym</li>
