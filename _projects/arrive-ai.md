@@ -6,8 +6,8 @@ summary: "An autonomy stack combining RL policies with vision-language-action mo
 lede: "What I'm working on now. Described at the level I'd put on a resume — the specifics belong to my employer."
 period: "Sept 2025 – present"
 where: "Arrive AI Inc., Fishers, Indiana"
-role: "NVIDIA Robotics 3D Specialist"
-stack: ["Isaac Sim", "OpenVLA", "OpenPI", "TensorRT", "Triton", "DeepStream", "Jetson Thor", "WebRTC", "Docker", "k3s"]
+role: "Robotics 3D Specialist"
+stack: ["Isaac Sim", "OpenVLA", "OpenPI", "TensorRT", "Triton", "DeepStream", "Jetson Thor", "Qualcomm IQ9075", "WebRTC", "Docker"]
 ---
 
 ## What I'm doing
@@ -26,16 +26,20 @@ models — including deploying open VLA models such as OpenVLA and OpenPI — so
 an instruction rather than only on a waypoint list.
 
 **Perception and inference.** Evaluating and optimizing vision transformers for real-time perception,
-accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT, and profiling Jetson
-Orin Nano, Orin AGX and Thor (Blackwell) devices for the latency-throughput trade-offs that decide
-what actually fits on the robot.
+accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT.
 
-**Getting it to the fleet.** Architecting a containerized AI inference codebase with Docker and k3s
-so deployment is repeatable rather than artisanal, plus building the web frontend for low-latency
-WebRTC video streaming.
+**Choosing the silicon.** Profiling edge devices for the latency-throughput trade-offs that decide
+what actually fits on the robot — Jetson Orin Nano, Orin AGX and Thor (Blackwell), and, beyond
+NVIDIA, Qualcomm's IQ9075 and hardware from Infineon Technologies. Picking a compute platform is a
+decision you live with for years, so it's worth measuring rather than assuming.
 
-## Why no video here
+**Getting it to the fleet.** Architecting the containerized AI inference codebase with Docker so
+deployment is repeatable rather than artisanal, working with the platform team on the k3s side of
+getting it out to the fleet. I also build the web frontend for low-latency WebRTC video streaming.
 
-Everything above is public in the sense that it's on my resume. The systems themselves aren't mine
-to show, so this page has no footage and no product detail. If you want to talk about any of it in
-more depth, [get in touch](/contact/).
+## About Arrive AI
+
+[Arrive AI](https://www.arriveai.com) connects people, robots and drones through the Arrive Point™
+Network, built to scale the future of delivery. This page describes my work at the level it appears
+on my resume — the systems themselves aren't mine to show, so there's no footage or product detail
+here. If you'd like to talk about any of it in more depth, [get in touch](/contact/).

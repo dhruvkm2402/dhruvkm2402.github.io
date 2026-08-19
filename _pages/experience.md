@@ -13,14 +13,14 @@ redirect_from:
 <ul class="timeline">
   <li class="tl">
     <p class="tl__when">Sept 2025 – Present</p>
-    <h3 class="tl__role">NVIDIA Robotics 3D Specialist</h3>
+    <h3 class="tl__role">Robotics 3D Specialist</h3>
     <p class="tl__org">Arrive AI Inc. · Fishers, Indiana</p>
     <ul>
       <li>Building a digital twin simulation environment at scale in NVIDIA Isaac Sim for scenario testing before real-world deployment.</li>
       <li>Developing the autonomy architecture for a mobile robot platform, integrating reinforcement learning policies with vision-language (VLM) and vision-language-action (VLA) models — including deploying open VLA models such as OpenVLA and OpenPI — for instruction-driven tasks.</li>
       <li>Evaluating and optimizing vision transformers for real-time perception, accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT.</li>
-      <li>Profiling Jetson Orin Nano, Orin AGX and Thor (Blackwell) edge devices for inference latency and throughput trade-offs.</li>
-      <li>Architecting a containerized AI inference codebase with Docker and k3s for repeatable fleet deployment, plus the web frontend for low-latency WebRTC video streaming.</li>
+      <li>Profiling edge devices for inference latency and throughput trade-offs — Jetson Orin Nano, Orin AGX and Thor (Blackwell), plus Qualcomm IQ9075 and Infineon Technologies hardware.</li>
+      <li>Architecting a containerized AI inference codebase with Docker for repeatable deployment, working with the platform team on k3s fleet rollout, and building the web frontend for low-latency WebRTC video streaming.</li>
     </ul>
   </li>
 
@@ -91,11 +91,11 @@ redirect_from:
   </dl>
   <dl class="skillset__group">
     <dt>Frameworks and tools</dt>
-    <dd>ROS, ROS 2, PyTorch, ONNX, TensorRT, Triton, DeepStream SDK, OpenVLA, OpenPI, WebRTC, Docker, k3s, Git, MATLAB, Simulink.</dd>
+    <dd>ROS, ROS 2, PyTorch, ONNX, TensorRT, Triton, DeepStream SDK, OpenVLA, OpenPI, WebRTC, Docker, Git, MATLAB, Simulink.</dd>
   </dl>
   <dl class="skillset__group">
     <dt>Hardware and platforms</dt>
-    <dd>Unitree Go1 quadruped, Clearpath Husky, TurtleBot3, Jetson Orin Nano / AGX / Thor (Blackwell), Velodyne VLP-16 LiDAR, Intel RealSense and stereo depth cameras, OptiTrack motion capture.</dd>
+    <dd>Unitree Go1 quadruped, Clearpath Husky, TurtleBot3, Jetson Orin Nano / AGX / Thor (Blackwell), Qualcomm IQ9075, Infineon Technologies hardware, Velodyne VLP-16 LiDAR, Intel RealSense and stereo depth cameras, OptiTrack motion capture.</dd>
   </dl>
   <dl class="skillset__group">
     <dt>Languages</dt>
