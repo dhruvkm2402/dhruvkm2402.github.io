@@ -82,11 +82,3 @@ properly rather than with a holding message.
 </div>
 
 <p class="section__note">Based in Fishers, Indiana.</p>
-
-## A few things I'm interested in talking about
-
-- Reinforcement learning for real robots — ground vehicles, legged platforms, multi-robot coordination.
-- Vision-language-action models and instruction-driven autonomy: OpenVLA, OpenPI, and what it takes to make them useful on an actual machine.
-- Perception that has to run on the robot — vision transformers, depth and segmentation networks, and the latency budget of a Jetson.
-- Simulation-first development: digital twins, scenario testing, and how much of a deployment you can genuinely de-risk before hardware.
-- Teaching and explaining this work to people who don't already speak robotics.
