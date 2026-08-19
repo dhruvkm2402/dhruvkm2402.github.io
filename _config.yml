@@ -18,7 +18,7 @@ url                      : https://dhruvkm2402.github.io # the base hostname & p
 # The destination address lives in that service, never in this repo or the page,
 # which is the whole point -- the form is the only contact route on the site.
 # Until this is filled in, the form tells visitors it isn't connected yet.
-contact_form_endpoint    : # e.g. "https://formspree.io/f/xxxxxxxx"
+contact_form_endpoint    : "https://formspree.io/f/xoeaylpa"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "dhruvkm2402.github.io"
 
