@@ -1,41 +1,21 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# Header navigation. Order here is the order on the site.
+# Removing an entry hides the link but does not unpublish the page.
 
 main:
-  #- title: "Publications"
-   # url: /publications/
+  - title: "Projects"
+    url: /projects/
 
-  - title: "Additional Projects"
-    url: /aprojects/
-  
-  - title: "Talks"
-    url: /ptalks/
-  
-  - title: "Leadership"
-    url: /leadership/
-    
-  - title: "Teaching"
-    url: /ateaching/
+  - title: "Publications"
+    url: /publications/
 
-  
-   
-    #- title: "Talks"
-   # url: /talks/    
+  - title: "Experience"
+    url: /experience/
 
-  # title: "Teaching"
-   # url: /teaching/    
-    
-  #- title: "Portfolio"
-   # url: /portfolio/
-        
-  #- title: "Blog Posts"
-    #url: /year-archive/
-    
-  #- title: "CV"
-   # url: /cv/
-    
-  #- title: "Guide"
-   # url: /markdown/
+  - title: "Talks & Teaching"
+    url: /talks-teaching/
+
+  - title: "Writing"
+    url: /blog/
+
+  - title: "Contact"
+    url: /contact/

@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Home"
-title_separator          : "-"
+title                    : "Dhruv Mehta"
+title_separator          : "·"
 name                     : &name "Dhruv Mehta"
-description              : &description 
+description              : &description "Roboticist working on physical AI — reinforcement learning policies trained in NVIDIA Isaac Sim and deployed on real ground robots. PhD, Clemson University."
 url                      : https://dhruvkm2402.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "dhruvkm2402.github.io"
@@ -21,14 +21,14 @@ repository               : "dhruvkm2402.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "DhruvMehta_Headshot.jpg"
-  name             : "Dhruv Mehta"
-  pronouns         : # example: "she/her"  
-  bio              : "I'm a PhD Graduate from Clemson University with a focus in Robotics and AI"
-  location         : "United States"
-  
+  avatar           : "dhruv-mehta.jpg"
+  name             : "Dhruv Mehta, PhD"
+  pronouns         : # example: "she/her"
+  bio              : "Roboticist. I train robot policies in simulation and get them working on real hardware."
+  location         : "Fishers, Indiana"
+
   uri              : # URL
-  email            : "dhruvm@clemson.edu" 
+  email            : # intentionally blank -- see /contact/, which assembles the address client-side
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -134,13 +134,17 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "/files/posters/payload-transport.jpg"  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : *name
+  links:
+    - https://www.linkedin.com/in/dhruvkm
+    - https://github.com/dhruvkm2402
+    - https://scholar.google.com/citations?user=gqUo1V4AAAAJ
+    - https://www.researchgate.net/profile/Dhruv-Mehta-24
 
 
 # Analytics
@@ -159,6 +163,8 @@ exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
+  - CLAUDE.md
+  - CONTRIBUTING.md
   - .bundle
   - .github
   - .jekyll-assets-cache
@@ -211,19 +217,12 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:path/
   publications:
     output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
- 
+    permalink: /publications/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -236,7 +235,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
       share: true
       related: true
   # _pages
@@ -246,15 +244,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _projects
   - scope:
       path: ""
-      type: teaching
+      type: projects
     values:
-      layout: single
-      author_profile: true
+      layout: project
+      author_profile: false
       share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -263,25 +260,6 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-    # _talks
 
 
 
@@ -303,6 +281,7 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 
@@ -311,6 +290,7 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 

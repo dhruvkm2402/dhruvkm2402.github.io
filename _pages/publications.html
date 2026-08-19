@@ -1,36 +1,51 @@
 ---
-layout: archive
+layout: wide
 title: "Publications"
+lede: "Peer-reviewed work from the PhD, most of it on getting learned control to survive contact with real terrain."
 permalink: /publications/
-author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<p class="btn-row" style="margin-top:0.6em">
+  <a class="button" href="https://scholar.google.com/citations?user=gqUo1V4AAAAJ" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+  <a class="button" href="https://www.researchgate.net/profile/Dhruv-Mehta-24" rel="noopener"><i class="ai ai-researchgate" aria-hidden="true"></i> ResearchGate</a>
+</p>
+
+<div class="publist" style="margin-top:2em">
+  {% assign papers = site.publications | sort: "date" | reverse %}
+  {% for paper in papers %}
+    <div class="pub">
+      <div class="pub__year">{{ paper.date | date: "%Y" }}</div>
+      <div>
+        <h2 class="pub__title">{{ paper.title }}</h2>
+        <p class="pub__authors">{{ paper.authors | replace: "D. Mehta", '<span class="me">D. Mehta</span>' }}</p>
+        <p class="pub__venue"><em>{{ paper.venue }}</em></p>
+
+        {% if paper.content and paper.content != "" %}
+          <div class="prose" style="font-size:0.96em;margin-bottom:0.8em">{{ paper.content }}</div>
+        {% endif %}
+
+        <div class="pub__links">
+          {% if paper.paperurl %}<a class="button button--small" href="{{ paper.paperurl | prepend: base_path }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
+          {% if paper.preprinturl %}<a class="button button--small" href="{{ paper.preprinturl | prepend: base_path }}">Preprint</a>{% endif %}
+          {% if paper.doi %}<a class="button button--small" href="{{ paper.doi }}" rel="noopener">IEEE Xplore</a>{% endif %}
+          {% if paper.code %}<a class="button button--small" href="{{ paper.code }}" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+          {% if paper.project %}<a class="button button--small" href="{{ paper.project | prepend: base_path }}">Project page</a>{% endif %}
+          {% if paper.bibtex %}
+            <button class="button button--small" type="button" data-bibtex-toggle="bib-{{ forloop.index }}" aria-expanded="false">BibTeX</button>
+          {% endif %}
+        </div>
+
+        {% if paper.bibtex %}
+          <div class="bibtex" id="bib-{{ forloop.index }}" hidden>
+            <pre id="bibtext-{{ forloop.index }}">{{ paper.bibtex }}</pre>
+            <p style="margin:0.5em 0 0">
+              <button class="button button--small" type="button" data-bibtex-copy="bibtext-{{ forloop.index }}">Copy</button>
+            </p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+</div>

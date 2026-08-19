@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  <article class="page-body" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="wrap{% if page.narrow %} wrap--narrow{% endif %}">
+      {% if page.title and page.hide_title != true %}
+        <header class="section__head" style="display:block">
+          <h1 class="hero__name" style="font-size:2.1em" itemprop="headline">{{ page.title }}</h1>
+          {% if page.lede %}<p class="hero__lede">{{ page.lede | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% endif %}
+        </header>
+      {% endif %}
+
+      <div class="page__content prose" itemprop="text">
+        {{ content }}
+      </div>
+    </div>
+  </article>
+</div>

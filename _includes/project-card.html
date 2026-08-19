@@ -1,0 +1,31 @@
+{% comment %}
+  Project card. Expects `include.project` (a document from the projects collection).
+{% endcomment %}
+
+{% include base_path %}
+{% assign p = include.project %}
+
+<article class="card">
+  {% if p.video or p.image %}
+    <a class="card__media" href="{{ base_path }}{{ p.url }}">
+      <img src="{{ base_path }}{% if p.image %}/images/{{ p.image }}{% else %}/files/posters/{{ p.video }}.jpg{% endif %}"
+           alt="{{ p.image_alt | default: p.title | escape }}" loading="lazy" width="640" height="360">
+      {% if p.badge %}<span class="card__badge">{{ p.badge }}</span>{% endif %}
+    </a>
+  {% endif %}
+
+  <div class="card__body">
+    {% unless p.video or p.image %}
+      {% if p.badge %}<p style="margin:0 0 0.6em"><span class="chip chip--accent">{{ p.badge }}</span></p>{% endif %}
+    {% endunless %}
+
+    <h3 class="card__title"><a href="{{ base_path }}{{ p.url }}">{{ p.title }}</a></h3>
+    <p class="card__summary">{{ p.summary }}</p>
+
+    <div class="card__footer">
+      {% for tech in p.stack limit: 3 %}
+        <span class="chip">{{ tech }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,40 @@
+{% comment %}
+  Click-to-play video figure.
+
+  Nothing downloads until the visitor clicks: the <video> carries preload="none"
+  and its source lives in data-src until site.js activates it.
+
+  Params:
+    src      - basename in /files/media (without .mp4)   [required]
+    caption  - text under the video                      [optional]
+    portrait - "true" to constrain width for 9:16 clips  [optional]
+    loop     - "false" to disable looping                [optional]
+{% endcomment %}
+
+{% include base_path %}
+
+<figure class="vfig{% if include.portrait == 'true' %} vfig--portrait{% endif %}">
+  <div class="vfig__frame">
+    {% comment %}
+      `controls` is added by site.js on play -- if it were in the markup the
+      native control bar would draw on top of the poster overlay.
+    {% endcomment %}
+    <video
+      preload="none"
+      playsinline
+      muted
+      {% unless include.loop == 'false' %}loop{% endunless %}
+      poster="{{ base_path }}/files/posters/{{ include.src }}.jpg"
+      data-src="{{ base_path }}/files/media/{{ include.src }}.mp4">
+      Your browser does not support the video tag.
+      <a href="{{ base_path }}/files/media/{{ include.src }}.mp4">Download the video</a>.
+    </video>
+    <button type="button" class="vplay" aria-label="Play video{% if include.caption %}: {{ include.caption | strip_html }}{% endif %}">
+      <span class="vplay__icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  {% if include.caption %}<figcaption class="vfig__caption">{{ include.caption }}</figcaption>{% endif %}
+  <noscript>
+    <p class="vfig__caption"><a href="{{ base_path }}/files/media/{{ include.src }}.mp4">Download this video</a> (JavaScript is required to play it inline).</p>
+  </noscript>
+</figure>

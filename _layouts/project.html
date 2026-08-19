@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  <article itemscope itemtype="http://schema.org/CreativeWork">
+
+    <header class="project__header">
+      <div class="wrap">
+        <a class="project__back" href="{{ base_path }}/projects/">&larr; All projects</a>
+
+        {% if page.badge %}<p style="margin:0 0 0.7em"><span class="chip chip--accent">{{ page.badge }}</span></p>{% endif %}
+
+        <h1 class="project__title" itemprop="headline">{{ page.title }}</h1>
+        {% if page.lede %}<p class="project__lede">{{ page.lede }}</p>{% endif %}
+
+        <div class="btn-row" style="margin-top:0.4em">
+          {% if page.paper %}<a class="button button--primary" href="{{ page.paper | prepend: base_path }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>{% endif %}
+          {% if page.code %}<a class="button" href="{{ page.code }}" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+          {% if page.doi %}<a class="button" href="{{ page.doi }}" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> {{ page.doi_label | default: "Publisher page" }}</a>{% endif %}
+          {% if page.writeup %}<a class="button" href="{{ page.writeup }}" rel="noopener"><i class="fas fa-book-open" aria-hidden="true"></i> Write-up</a>{% endif %}
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <div class="project__grid">
+
+        <div class="project__main page__content prose" itemprop="text">
+          {% if page.results %}
+            <div class="results">
+              {% for r in page.results %}
+                <div class="result">
+                  <span class="result__value">{{ r.value }}</span>
+                  <span class="result__label">{{ r.label }}</span>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {{ content }}
+        </div>
+
+        <aside class="project__aside">
+          <dl class="factlist">
+            {% if page.period %}<dt>When</dt><dd>{{ page.period }}</dd>{% endif %}
+            {% if page.where %}<dt>Where</dt><dd>{{ page.where }}</dd>{% endif %}
+            {% if page.role %}<dt>My role</dt><dd>{{ page.role }}</dd>{% endif %}
+            {% if page.authors %}<dt>Authors</dt><dd>{{ page.authors }}</dd>{% endif %}
+            {% if page.venue %}<dt>Published</dt><dd>{{ page.venue }}</dd>{% endif %}
+            {% if page.stack %}
+              <dt>Stack</dt>
+              <dd>
+                <ul class="chip-row" style="margin-bottom:0">
+                  {% for tech in page.stack %}<li><span class="chip">{{ tech }}</span></li>{% endfor %}
+                </ul>
+              </dd>
+            {% endif %}
+          </dl>
+        </aside>
+
+      </div>
+    </div>
+
+    {% assign others = site.projects | where_exp: "item", "item.url != page.url" | sort: "order" %}
+    {% if others.size > 0 %}
+      <section class="section" style="border-top:1px solid var(--border);border-bottom:0">
+        <div class="wrap">
+          <div class="section__head">
+            <h2 class="section__title">More projects</h2>
+            <a class="section__link" href="{{ base_path }}/projects/">See all &rarr;</a>
+          </div>
+          <div class="card-grid card-grid--three">
+            {% for other in others limit: 3 %}
+              {% include project-card.html project=other %}
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+  </article>
+</div>

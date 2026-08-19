@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero__grid">
+        <div>
+          <span class="hero__eyebrow">{{ page.eyebrow }}</span>
+          <h1 class="hero__name">{{ page.heading }}</h1>
+          <p class="hero__lede">{{ page.lede | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+          <p class="hero__sub">{{ page.sub | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+
+          <div class="btn-row">
+            <a class="button button--primary" href="{{ base_path }}/projects/">See the work</a>
+            <a class="button" href="{{ base_path }}/publications/">Publications</a>
+            <a class="button" href="{{ base_path }}/contact/">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero__portrait">
+          <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="Dhruv Mehta" width="800" height="800">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Selected work</h2>
+        <a class="section__link" href="{{ base_path }}/projects/">All projects &rarr;</a>
+      </div>
+      <div class="card-grid card-grid--three">
+        {% for project in featured %}
+          {% include project-card.html project=project %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">{{ page.about_title | default: "A bit about me" }}</h2>
+      </div>
+      <div class="page__content prose" style="max-width:46em">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  {% assign papers = site.publications | sort: "date" | reverse %}
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Recent publications</h2>
+        <a class="section__link" href="{{ base_path }}/publications/">All publications &rarr;</a>
+      </div>
+      <div class="publist">
+        {% for paper in papers limit: 3 %}
+          <div class="pub">
+            <div class="pub__year">{{ paper.date | date: "%Y" }}</div>
+            <div>
+              <h3 class="pub__title">{{ paper.title }}</h3>
+              <p class="pub__authors">{{ paper.authors }}</p>
+              <p class="pub__venue">{{ paper.venue }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+</div>

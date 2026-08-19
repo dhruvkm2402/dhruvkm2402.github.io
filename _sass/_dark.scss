@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Dark theme
+   Minimal Mistakes bakes its colors into Sass variables at build time, so a
+   full theme swap is not possible. This overrides the tokens used by the
+   custom layer plus the handful of upstream selectors that would otherwise
+   stay light: base surfaces, masthead, sidebar, content and footer.
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:            #101317;
+    --bg-raised:     #171b21;
+    --bg-sunken:     #1b2027;
+    --border:        #272d36;
+    --border-strong: #3a424e;
+
+    --ink:           #e9ecf1;
+    --ink-soft:      #b9c0cb;
+    --ink-muted:     #8b94a3;
+
+    --accent:        #3fc7b4;
+    --accent-hover:  #6fdccd;
+    --accent-wash:   #14312e;
+    --highlight:     #f0a44a;
+
+    --shadow:        0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.35);
+    --shadow-lift:   0 2px 6px rgba(0, 0, 0, 0.45), 0 14px 34px rgba(0, 0, 0, 0.5);
+  }
+
+  html, body {
+    background-color: var(--bg);
+    color: var(--ink);
+  }
+
+  /* Upstream base elements */
+  h1, h2, h3, h4, h5, h6 { color: var(--ink); }
+  p, li, dd, blockquote, figcaption, small { color: var(--ink-soft); }
+  hr { border-color: var(--border); }
+  strong, b { color: var(--ink); }
+
+  a { color: var(--accent); }
+  a:hover, a:focus { color: var(--accent-hover); }
+  a:visited { color: var(--accent); }
+
+  blockquote {
+    border-left-color: var(--border-strong);
+    color: var(--ink-soft);
+  }
+
+  code, pre, tt {
+    background-color: var(--bg-sunken);
+    color: var(--ink-soft);
+  }
+
+  pre { border: 1px solid var(--border); }
+
+  table { color: var(--ink-soft); }
+  th { background-color: var(--bg-sunken); color: var(--ink); border-color: var(--border); }
+  td { border-color: var(--border); }
+
+  /* Masthead */
+  .masthead { background-color: var(--bg); border-bottom-color: var(--border); }
+  .greedy-nav { background: transparent; }
+  .greedy-nav a { color: var(--ink-soft); }
+  .greedy-nav a:hover { color: var(--accent); }
+  .greedy-nav .masthead__menu-item--lg a { color: var(--ink); }
+  .greedy-nav button { background: var(--bg-sunken); }
+  .greedy-nav .navicon,
+  .greedy-nav .navicon:before,
+  .greedy-nav .navicon:after { background: var(--ink); }
+  .greedy-nav .hidden-links { background: var(--bg-raised); border-color: var(--border); }
+  .greedy-nav .hidden-links a { color: var(--ink-soft); }
+  .greedy-nav .hidden-links:before { border-bottom-color: var(--border); }
+
+  /* Page / article surfaces */
+  #main .page,
+  .page__content,
+  .page__inner-wrap { color: var(--ink-soft); }
+
+  .page__title, .page__meta, .page__date { color: var(--ink); }
+  .page__meta, .page__date { color: var(--ink-muted); }
+  .page__content h1, .page__content h2, .page__content h3,
+  .page__content h4, .page__content h5, .page__content h6 { color: var(--ink); }
+  .page__content .notice,
+  .page__content .notice--info { background-color: var(--bg-sunken); color: var(--ink-soft); }
+
+  .page__taxonomy .page__taxonomy-item {
+    color: var(--ink-soft);
+    background: var(--bg-sunken);
+    border-color: var(--border);
+  }
+
+  /* Archive lists (blog index) */
+  .archive__item-title { color: var(--ink); }
+  .archive__item-title a { color: var(--ink); }
+  .archive__item-title a:hover { color: var(--accent); }
+  .archive__item-excerpt { color: var(--ink-soft); }
+  .archive__subtitle { color: var(--ink-muted); border-bottom-color: var(--border); }
+
+  /* Sidebar author profile (blog posts) */
+  .sidebar { color: var(--ink-soft); }
+  .author__name { color: var(--ink); }
+  .author__bio { color: var(--ink-muted); }
+  .author__urls-wrapper button { color: var(--ink-soft); border-color: var(--border-strong); }
+  .author__urls {
+    background-color: var(--bg-raised);
+    border-color: var(--border);
+    box-shadow: var(--shadow);
+  }
+  .author__urls:before { border-bottom-color: var(--border); }
+  .author__urls:after { border-bottom-color: var(--bg-raised); }
+  .author__urls li a { color: var(--ink-soft); }
+  .author__urls li a:hover { color: var(--accent); }
+
+  /* Footer */
+  .page__footer { background: var(--bg-sunken); border-top-color: var(--border); color: var(--ink-muted); }
+  .page__footer a { color: var(--ink-soft); }
+  .page__footer a:hover { color: var(--accent); }
+  .page__footer-follow .social-icons a { color: var(--ink-soft); }
+
+  /* Pagination / share buttons */
+  .pagination li a { color: var(--ink-soft); border-color: var(--border); background: var(--bg-raised); }
+  .pagination li a:hover { color: var(--accent); }
+  .page__share { border-top-color: var(--border); }
+  .page__share-title { color: var(--ink-muted); }
+
+  /* Custom components that need more than a token swap */
+  .card__badge { background: rgba(0, 0, 0, 0.75); }
+  .vfig__frame { background: #05070a; }
+  .button { color: var(--ink); }
+  .button:hover { color: var(--ink); }
+  .button--primary,
+  .button--primary:hover { color: #06201d; }
+  .contact-card { color: var(--ink); }
+  .contact-card:hover { color: var(--ink); }
+
+  img { opacity: 0.94; }
+  img:hover { opacity: 1; }
+}
