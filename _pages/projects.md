@@ -15,7 +15,3 @@ redirect_from:
     {% include project-card.html project=project %}
   {% endfor %}
 </div>
-
-<p class="section__note" style="margin-top:2.5em">
-  Co-authored projects name every contributor on their page. Where I wasn't the lead, it says so.
-</p>
