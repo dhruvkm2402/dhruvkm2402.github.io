@@ -2,12 +2,12 @@
 title: "Digital Twins and Edge Autonomy at Arrive AI"
 order: 0
 badge: "Current work"
-summary: "Building a scaled digital twin in Isaac Sim, an autonomy architecture combining RL with vision-language models, and the inference stack that runs it on Jetson hardware."
+summary: "An autonomy stack combining RL policies with vision-language-action models, the edge inference that runs it on Jetson hardware, and a digital twin to test it before deployment."
 lede: "What I'm working on now. Described at the level I'd put on a resume — the specifics belong to my employer."
 period: "Sept 2025 – present"
 where: "Arrive AI Inc., Fishers, Indiana"
 role: "NVIDIA Robotics 3D Specialist"
-stack: ["Isaac Sim", "WebRTC", "TensorRT", "Triton", "DeepStream", "Jetson Thor", "Docker", "k3s"]
+stack: ["Isaac Sim", "OpenVLA", "OpenPI", "TensorRT", "Triton", "DeepStream", "Jetson Thor", "WebRTC", "Docker", "k3s"]
 ---
 
 ## What I'm doing
@@ -22,7 +22,8 @@ happened outdoors, in front of someone.
 
 **Autonomy architecture.** Developing the autonomy stack for a mobile robot platform, integrating
 reinforcement learning policies with vision-language models (VLM) and vision-language-action (VLA)
-models so the robot can act on instructions rather than only on waypoints.
+models — including deploying open VLA models such as OpenVLA and OpenPI — so the robot can act on
+an instruction rather than only on a waypoint list.
 
 **Perception and inference.** Evaluating and optimizing vision transformers for real-time perception,
 accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT, and profiling Jetson

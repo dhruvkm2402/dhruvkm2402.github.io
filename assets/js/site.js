@@ -21,25 +21,60 @@
   });
 
   /* ----------------------------------------------------------------------
-     Email link. The address is base64 in the markup so it is not sitting in
-     the page source as plain text for scrapers.
+     Contact form. Submits to the configured endpoint over fetch so the page
+     never navigates away and, more to the point, so the destination address
+     never appears anywhere in the page — not in the source, not in a mailto,
+     not after a click. The endpoint holds it.
      ---------------------------------------------------------------------- */
-  document.querySelectorAll("[data-mail]").forEach(function (el) {
-    var reveal = function (event) {
-      var address = atob(el.getAttribute("data-mail"));
-      el.setAttribute("href", "mailto:" + address);
-      var label = el.querySelector("[data-mail-label]");
-      if (label) label.textContent = address;
-      el.removeEventListener("mouseenter", reveal);
-      el.removeEventListener("focus", reveal);
-      if (event && event.type === "click") {
-        window.location.href = "mailto:" + address;
-      }
+  var form = document.getElementById("contact-form");
+  if (form) {
+    var status = document.getElementById("contact-status");
+    var button = form.querySelector("button[type=submit]");
+
+    var setStatus = function (message, state) {
+      if (!status) return;
+      status.textContent = message;
+      status.className = "form-status" + (state ? " form-status--" + state : "");
     };
-    el.addEventListener("mouseenter", reveal);
-    el.addEventListener("focus", reveal);
-    el.addEventListener("click", reveal);
-  });
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var endpoint = form.getAttribute("action");
+      if (!endpoint) {
+        setStatus(
+          "This form isn't connected yet — reach me on LinkedIn in the meantime.",
+          "error"
+        );
+        return;
+      }
+
+      if (form.elements._gotcha && form.elements._gotcha.value) return; // bot
+
+      button.disabled = true;
+      setStatus("Sending…");
+
+      fetch(endpoint, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error(response.status);
+          form.reset();
+          setStatus("Thanks — that reached me. I'll get back to you.", "ok");
+        })
+        .catch(function () {
+          setStatus(
+            "That didn't send. Try again, or reach me on LinkedIn.",
+            "error"
+          );
+        })
+        .then(function () {
+          button.disabled = false;
+        });
+    });
+  }
 
   /* ----------------------------------------------------------------------
      BibTeX disclosure + copy.

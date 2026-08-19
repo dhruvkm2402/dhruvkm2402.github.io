@@ -17,7 +17,7 @@ redirect_from:
     <p class="tl__org">Arrive AI Inc. · Fishers, Indiana</p>
     <ul>
       <li>Building a digital twin simulation environment at scale in NVIDIA Isaac Sim for scenario testing before real-world deployment.</li>
-      <li>Developing the autonomy architecture for a mobile robot platform, integrating reinforcement learning policies with vision-language (VLM) and vision-language-action (VLA) models for instruction-driven tasks.</li>
+      <li>Developing the autonomy architecture for a mobile robot platform, integrating reinforcement learning policies with vision-language (VLM) and vision-language-action (VLA) models — including deploying open VLA models such as OpenVLA and OpenPI — for instruction-driven tasks.</li>
       <li>Evaluating and optimizing vision transformers for real-time perception, accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT.</li>
       <li>Profiling Jetson Orin Nano, Orin AGX and Thor (Blackwell) edge devices for inference latency and throughput trade-offs.</li>
       <li>Architecting a containerized AI inference codebase with Docker and k3s for repeatable fleet deployment, plus the web frontend for low-latency WebRTC video streaming.</li>
@@ -83,7 +83,7 @@ redirect_from:
 <div class="skillset">
   <dl class="skillset__group">
     <dt>Focus areas</dt>
-    <dd>Robotics simulation platforms, digital twins, simulation-in-the-loop testing and evaluation, sim-to-real / zero-shot transfer, perception, autonomy and navigation, reinforcement learning, vision-language (VLM) and vision-language-action (VLA) models.</dd>
+    <dd>Reinforcement learning, perception, autonomy and navigation, vision-language (VLM) and vision-language-action (VLA) models, robotics simulation platforms, digital twins, simulation-in-the-loop testing and evaluation, sim-to-real / zero-shot transfer.</dd>
   </dl>
   <dl class="skillset__group">
     <dt>Simulation and 3D</dt>
@@ -91,7 +91,7 @@ redirect_from:
   </dl>
   <dl class="skillset__group">
     <dt>Frameworks and tools</dt>
-    <dd>ROS, ROS 2, WebRTC, Git, PyTorch, ONNX, TensorRT, Triton, DeepStream SDK, MATLAB, Simulink.</dd>
+    <dd>ROS, ROS 2, PyTorch, ONNX, TensorRT, Triton, DeepStream SDK, OpenVLA, OpenPI, WebRTC, Docker, k3s, Git, MATLAB, Simulink.</dd>
   </dl>
   <dl class="skillset__group">
     <dt>Hardware and platforms</dt>

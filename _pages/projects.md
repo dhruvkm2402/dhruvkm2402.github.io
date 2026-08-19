@@ -1,7 +1,7 @@
 ---
 layout: wide
 title: "Projects"
-lede: "Robots that had to work outside the simulator. Each page covers what the problem was, what I actually built, and what the measurement came out to."
+lede: "Learned control, perception on the edge, SLAM, and the simulation behind them — on robots that had to work in front of someone. Each page covers what the problem was, what I actually built, and what the measurement came out to."
 permalink: /projects/
 hide_title: false
 redirect_from:

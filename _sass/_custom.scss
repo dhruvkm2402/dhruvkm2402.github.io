@@ -839,6 +839,71 @@ h1, h2, h3, h4 {
   @include breakpoint($small) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
+.contact-form {
+  margin: 2em 0 1em;
+
+  .field {
+    margin-bottom: 1.1em;
+
+    &--trap {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  }
+
+  label {
+    display: block;
+    font-size: 0.86em;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.35em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.65em 0.8em;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    background: var(--bg-raised);
+    color: var(--ink);
+    font-family: $global-font-family;
+    font-size: 0.98em;
+    line-height: 1.5;
+    box-shadow: none;
+    transition: border-color 0.12s ease;
+
+    &:focus {
+      border-color: var(--accent);
+      outline: 2px solid var(--accent-wash);
+      outline-offset: 0;
+    }
+
+    &::placeholder { color: var(--ink-muted); opacity: 0.75; }
+  }
+
+  textarea { resize: vertical; min-height: 8em; }
+
+  .field__note {
+    display: block;
+    margin-top: 0.3em;
+    font-size: 0.82em;
+    color: var(--ink-muted);
+  }
+}
+
+.form-status {
+  font-size: 0.9em;
+  color: var(--ink-muted);
+
+  &--ok { color: var(--accent); font-weight: 550; }
+  &--error { color: var(--highlight); font-weight: 550; }
+}
+
 .contact-card {
   display: flex;
   align-items: center;

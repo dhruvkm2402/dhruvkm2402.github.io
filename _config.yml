@@ -11,8 +11,14 @@ locale                   : "en-US"
 title                    : "Dhruv Mehta"
 title_separator          : "·"
 name                     : &name "Dhruv Mehta"
-description              : &description "Roboticist working on physical AI — reinforcement learning policies trained in NVIDIA Isaac Sim and deployed on real ground robots. PhD, Clemson University."
+description              : &description "Roboticist working across physical AI — reinforcement learning for ground and legged robots, vision transformers on edge hardware, and vision-language-action models for instruction-driven autonomy. PhD, Clemson University."
 url                      : https://dhruvkm2402.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+
+# Endpoint the /contact/ form posts to (Formspree, Web3Forms, Getform, ...).
+# The destination address lives in that service, never in this repo or the page,
+# which is the whole point -- the form is the only contact route on the site.
+# Until this is filled in, the form tells visitors it isn't connected yet.
+contact_form_endpoint    : # e.g. "https://formspree.io/f/xxxxxxxx"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "dhruvkm2402.github.io"
 
@@ -28,7 +34,7 @@ author:
   location         : "Fishers, Indiana"
 
   uri              : # URL
-  email            : # intentionally blank -- see /contact/, which assembles the address client-side
+  email            : # intentionally blank -- a value here renders a plaintext mailto in the sidebar
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
