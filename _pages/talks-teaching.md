@@ -79,15 +79,3 @@ redirect_from:
     </div>
   </div>
 </div>
-
-<div class="entry">
-  <div>
-    <h3 class="entry__title">Cross-organization collaboration with NVIDIA Robotics</h3>
-    <p class="entry__meta">Isaac ROS Nvblox integration</p>
-    <div class="entry__body">
-      <p>Partnered directly with NVIDIA's robotics team on integration and hardware bring-up for
-      real-time 3D scene reconstruction, then published a complete public guide so the setup is
-      reproducible. <a href="/projects/nvblox-reconstruction/">See the project &rarr;</a></p>
-    </div>
-  </div>
-</div>

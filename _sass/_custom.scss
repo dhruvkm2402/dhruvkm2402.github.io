@@ -966,6 +966,17 @@ h1, h2, h3, h4 {
   a:hover { color: var(--accent-hover); }
 }
 
+/* Blog index: the theme colors post titles with its own link blue */
+.archive__item-title {
+  a { color: var(--ink); text-decoration: none; }
+  a:hover { color: var(--accent); }
+}
+
+.archive__subtitle {
+  color: var(--ink-muted);
+  border-bottom-color: var(--border);
+}
+
 .canonical-note {
   padding: 0.8em 1em;
   background: var(--accent-wash);

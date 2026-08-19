@@ -10,7 +10,13 @@ redirect_from:
 
 {% include base_path %}
 
-<p class="archive__item-excerpt">Guides and notes from getting robotics stacks working, written down while the details were still fresh.</p>
+<div class="prose" style="max-width:44em;margin-bottom:2em">
+  <p>Guides and notes from getting robotics stacks working, written down while the details were
+  still fresh. The Nvblox walkthrough below came out of a cross-organization collaboration with
+  NVIDIA's robotics team on integration and hardware bring-up. Once we had real-time 3D scene
+  reconstruction running in simulation and on the robot, I wrote the whole setup down publicly so
+  the next person could reproduce it without rediscovering every step.</p>
+</div>
 
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
