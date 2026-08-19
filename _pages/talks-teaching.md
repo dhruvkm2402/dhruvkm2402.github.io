@@ -1,7 +1,7 @@
 ---
 layout: wide
 title: "Talks, Teaching & Leadership"
-lede: "The parts of the work that involve other people — students, conference attendees, and members of the public who have never met a robot before."
+lede: "The parts of the work that involve other people: students, conference attendees, and members of the public who have never met a robot before."
 permalink: /talks-teaching/
 redirect_from:
   - /ptalks/
@@ -22,8 +22,8 @@ redirect_from:
     <p class="entry__meta">Teaching assistant · Clemson University (CU-ICAR)</p>
     <div class="entry__body">
       <ul>
-        <li><strong>AuE8230 — Autonomy: Science and Systems.</strong> ROS Noetic simulation coursework paired with deployment on real TurtleBot3 Burger hardware, so students had to deal with the gap between the two rather than reading about it.</li>
-        <li><strong>AuE8220 — Autonomy: Mobility and Manipulation.</strong> Foundational robotics: kinematics, mobility and manipulation.</li>
+        <li><strong>AuE8230, Autonomy: Science and Systems.</strong> ROS Noetic simulation coursework paired with deployment on real TurtleBot3 Burger hardware, so students had to deal with the gap between the two rather than reading about it.</li>
+        <li><strong>AuE8220, Autonomy: Mobility and Manipulation.</strong> Foundational robotics: kinematics, mobility and manipulation.</li>
       </ul>
       <p>Teaching is where I learned that if you can't explain why a transform is wrong without
       drawing the frame twice, you probably don't understand it yourself yet.</p>
@@ -42,7 +42,7 @@ redirect_from:
     <p class="entry__meta">Greenville, South Carolina · 2023</p>
     <div class="entry__body">
       <p>Presented Clemson University's research and industry partnership opportunities at the
-      annual Innoventure Futures Festival — an audience of students, families and local industry
+      annual Innoventure Futures Festival, to an audience of students, families and local industry
       rather than fellow researchers, which is a genuinely different talk to give.</p>
     </div>
   </div>
@@ -57,7 +57,7 @@ redirect_from:
     <p class="entry__meta">Clemson University (CU-ICAR)</p>
     <div class="entry__body">
       <p>Demonstrated autonomous robots and driverless vehicle research from the Automation,
-      Mechatronics and Robotics Laboratory (ARM Lab) — live hardware demos, with all the risk that
+      Mechatronics and Robotics Laboratory (ARM Lab). Live hardware demos, with all the risk that
       implies, in front of a public audience.</p>
     </div>
   </div>
@@ -74,7 +74,7 @@ redirect_from:
     <p class="entry__meta">IEEE Robotics and Automation Society</p>
     <div class="entry__body">
       <p>Organized student events at ICRA and IROS as Co-Chair of the IEEE Robotics and Automation
-      Society Student Activities Committee — coordinating across organizers, volunteers and
+      Society Student Activities Committee, coordinating across organizers, volunteers and
       attendees at the two largest conferences in the field.</p>
     </div>
   </div>

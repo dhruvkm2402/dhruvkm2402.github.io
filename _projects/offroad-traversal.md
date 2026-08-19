@@ -5,7 +5,7 @@ featured: true
 badge: "IFAC MECC"
 video: offroad-traversal
 summary: "Goal-to-goal navigation learned end-to-end for a mid-scale off-road vehicle, with reward shaping tuned for stability rather than raw speed."
-lede: "Give the vehicle a goal pose in rough terrain and let it work out how to get there — without a hand-designed motion plan in the middle."
+lede: "Give the vehicle a goal pose in rough terrain and let it work out how to get there, without a hand-designed motion plan in the middle."
 period: "2023 – 2024"
 where: "ARM Lab, Clemson University (CU-ICAR)"
 role: "Lead author. Environment authoring, reward design, training and evaluation."
@@ -19,7 +19,7 @@ results:
 
 ## The problem
 
-Point stabilization — get to this position *and* this heading — is a well-understood problem on
+Point stabilization, meaning get to this position *and* this heading, is a well-understood problem on
 flat ground and a nuisance off it. An Ackermann-steered vehicle can't turn in place, so the
 approach has to be planned; add slopes and loose surfaces and the plan stops matching what the
 vehicle can actually execute.
@@ -31,7 +31,7 @@ problem for a mid-scale off-road platform. The vehicle learns the approach behav
 rather than tracking a separately planned trajectory.
 
 Reward shaping was the real work here. It's easy to write a reward that produces a policy which
-reaches the goal by driving in a way no one would sign off on — so the shaping deliberately
+reaches the goal by driving in a way no one would sign off on, so the shaping deliberately
 favoured stability over aggressive maneuvers, and I authored a custom off-road simulation
 environment so robustness was trained rather than assumed.
 

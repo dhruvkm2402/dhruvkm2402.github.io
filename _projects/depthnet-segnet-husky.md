@@ -14,7 +14,7 @@ stack: ["DepthNet", "SegNet", "Jetson AGX Orin", "ROS", "Clearpath Husky"]
 ## What this was
 
 DepthNet and SegNet deployed on an NVIDIA Jetson AGX Orin aboard a Clearpath Husky and tested
-in the lab environment — monocular depth estimation and semantic segmentation running against a
+in the lab environment. Monocular depth estimation and semantic segmentation running against a
 live camera feed while the robot drove.
 
 {% include video.html src="depthnet-segnet" caption="Live monocular depth inference on the Husky, robot view alongside the network output." %}
@@ -24,7 +24,7 @@ live camera feed while the robot drove.
 Benchmark numbers are computed on curated frames. A robot sees motion blur, its own shadow,
 overexposed windows and geometry the training set never contained, at whatever rate the edge device
 can sustain while everything else is also running. Putting the networks on the vehicle is how you
-find out which of those actually degrades the output — and it's the difference between a model that
+find out which of those actually degrades the output, and it's the difference between a model that
 scores well and a perception stack you'd let drive something.
 
 ## Credit

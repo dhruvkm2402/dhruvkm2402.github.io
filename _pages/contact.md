@@ -1,13 +1,13 @@
 ---
 layout: wide
 title: "Get in touch"
-lede: "Hiring, collaborating, or stuck on a problem that won't behave — I'm happy to hear from you."
+lede: "Hiring, collaborating, or stuck on a problem that won't behave. I'm happy to hear from you."
 permalink: /contact/
 narrow: true
 ---
 
 I try to read every email. If you're writing about a role, a paper, or a project you think I'd find
-interesting, say a sentence or two about what it actually is — that's usually enough for me to reply
+interesting, say a sentence or two about what it actually is. That's usually enough for me to reply
 properly rather than with a holding message.
 
 <form class="contact-form" id="contact-form"

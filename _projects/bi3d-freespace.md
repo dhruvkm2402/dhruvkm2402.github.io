@@ -22,7 +22,7 @@ runs across many scenarios, and that doesn't fit on one machine.
 Implemented NVIDIA's Isaac Bi3D freespace segmentation on Clemson's Palmetto HPC cluster, scaling
 evaluation across L40 GPUs so the study could cover more scenarios than a single workstation
 allows. The off-road simulation scenario was authored in Isaac Sim and visualized through the
-Omniverse streaming client — which is what makes cluster-side rendering usable at all, since the
+Omniverse streaming client, which is what makes cluster-side rendering usable at all, since the
 GPUs doing the work are nowhere near your desk.
 
 {% include video.html src="bi3d-freespace" caption="Freespace segmentation running on the Husky platform in the custom off-road scenario." %}
@@ -32,7 +32,7 @@ GPUs doing the work are nowhere near your desk.
 Deploying to a Clearpath Husky with a stereo depth camera surfaced a simulation question that has
 nothing to do with perception: skid-steer vehicles turn by deliberately violating the no-slip
 assumption, so how the solver handles contact matters. I quantified the trade-offs between PhysX's
-PGS and TGS solvers for skid-steer fidelity — a choice that silently decides whether your simulated
+PGS and TGS solvers for skid-steer fidelity, a choice that silently decides whether your simulated
 robot turns like the real one.
 
 ## Credit

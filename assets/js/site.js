@@ -23,7 +23,7 @@
   /* ----------------------------------------------------------------------
      Contact form. Submits to the configured endpoint over fetch so the page
      never navigates away and, more to the point, so the destination address
-     never appears anywhere in the page — not in the source, not in a mailto,
+     never appears anywhere in the page: not in the source, not in a mailto,
      not after a click. The endpoint holds it.
      ---------------------------------------------------------------------- */
   var form = document.getElementById("contact-form");
@@ -43,7 +43,7 @@
       var endpoint = form.getAttribute("action");
       if (!endpoint) {
         setStatus(
-          "This form isn't connected yet — reach me on LinkedIn in the meantime.",
+          "This form isn't connected yet. Reach me on LinkedIn in the meantime.",
           "error"
         );
         return;
@@ -62,7 +62,7 @@
         .then(function (response) {
           if (!response.ok) throw new Error(response.status);
           form.reset();
-          setStatus("Thanks — that reached me. I'll get back to you.", "ok");
+          setStatus("Thanks, that reached me. I'll get back to you.", "ok");
         })
         .catch(function () {
           setStatus(

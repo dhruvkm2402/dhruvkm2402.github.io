@@ -35,7 +35,7 @@ that made the classical controller predictable in the first place.
 
 A hybrid framework: a model-based controller keeps its role as the stable backbone, and a deep
 reinforcement learning policy learns the corrections the model can't express. The learned part
-handles what varies — terrain, traction, geometry — while the model-based part keeps behaviour
+handles what varies, whether that's terrain, traction or geometry, while the model-based part keeps behaviour
 bounded and legible.
 
 Choosing that split wasn't obvious, so I evaluated policy architectures across several deep
@@ -53,7 +53,7 @@ runs were comparable.
 ## The real-world test
 
 The framework was validated on multiple unseen real-world tracks under that same repeatable
-protocol, reaching **98.5% precision** in the real world. Below is one of those runs — the vehicle
+protocol, reaching **98.5% precision** in the real world. Below is one of those runs, with the vehicle
 tracking its path across an actual grass slope, not a rendered one.
 
 {% include video.html src="rough-terrain-real" portrait="true" caption="Real-world run on a grass slope. Same framework, same protocol, no simulator." %}

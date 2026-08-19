@@ -3,7 +3,7 @@ title: "Real-Time 3D Scene Reconstruction using NVIDIA Isaac ROS Nvblox in Simul
 date: 2023-10-18
 permalink: /blog/isaac-ros-nvblox-3d-reconstruction/
 canonical_url: "https://medium.com/@dhruvm_64603/real-time-3d-scene-reconstruction-using-nvidia-isaac-ros-nvblox-in-simulation-and-reality-4386595339c3"
-excerpt: "A complete walkthrough for running NVIDIA's hardware-accelerated 3D reconstruction stack twice over — on an NVIDIA Carter in Isaac Sim and on a TurtleBot3 Burger with a RealSense D435i and a Jetson Orin Nano — reconstructing the same VEX AI arena in both."
+excerpt: "A complete walkthrough for running NVIDIA's hardware-accelerated 3D reconstruction stack twice over, on an NVIDIA Carter in Isaac Sim and on a TurtleBot3 Burger with a RealSense D435i and a Jetson Orin Nano, reconstructing the same VEX AI arena in both."
 tags:
   - Isaac ROS
   - Nvblox
@@ -25,9 +25,9 @@ Originally published on <a href="https://medium.com/@dhruvm_64603/real-time-3d-s
 ![Isaac ROS Nvblox overview](/images/blog/nvblox-overview.jpg)
 *Source: [NVIDIA-ISAAC-ROS/isaac_ros_nvblox](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)*
 
-Simulation and reality are two facets of the same coin, which aid in prototyping, simulating, validating, and deploying autonomous mobile robots. One of the critical challenges in robotics is perception and navigation, where robots need to understand and navigate the complex 3D world around them. This article will explore an exciting combination of contemporaneous technology — the NVIDIA Isaac ROS Nvblox hardware accelerated 3D scene reconstruction packages for the Nav2 stack with ROS 2.
+Simulation and reality are two facets of the same coin, which aid in prototyping, simulating, validating, and deploying autonomous mobile robots. One of the critical challenges in robotics is perception and navigation, where robots need to understand and navigate the complex 3D world around them. This article will explore an exciting combination of contemporaneous technology: the NVIDIA Isaac ROS Nvblox hardware accelerated 3D scene reconstruction packages for the Nav2 stack with ROS 2.
 
-We show that the scene reconstruction pipeline is agnostic to the robot platform using an NVIDIA Carter in simulation and a ROBOTIS TurtleBot3 in reality to perform 3D reconstruction of the same scene — the [VEX AI arena](https://www.vexrobotics.com/v5/competition/vex-ai).
+We show that the scene reconstruction pipeline is agnostic to the robot platform using an NVIDIA Carter in simulation and a ROBOTIS TurtleBot3 in reality to perform 3D reconstruction of the same scene, the [VEX AI arena](https://www.vexrobotics.com/v5/competition/vex-ai).
 
 ![Article structure](/images/blog/nvblox-article-structure.jpg)
 
@@ -89,28 +89,28 @@ We tested the Isaac ROS Nvblox packages (ROS 2 Humble) on a TurtleBot3 Burger (r
 ![Hardware setup for running Isaac ROS Nvblox with TurtleBot3](/images/blog/nvblox-hardware-setup.jpg)
 *Hardware setup for running Isaac ROS Nvblox with TurtleBot3*
 
-**Requirements — robot:**
+**Requirements, robot:**
 
 1. [TurtleBot3 Burger robot hardware](https://www.robotis.us/turtlebot-3-burger-us/) with [TurtleBot3 SBC image](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/) (tested with [ROS 2 Foxy Fitzroy](https://docs.ros.org/en/foxy/Installation/Alternatives/Ubuntu-Development-Setup.html)).
 2. [TurtleBot3 packages](https://github.com/Tinker-Twins/TurtleBot3).
 
-**Requirements — depth camera:**
+**Requirements, depth camera:**
 
 1. [Intel RealSense D435i](https://www.intelrealsense.com/depth-camera-d435i/) or any other compatible version highlighted [here](https://github.com/NVIDIA-ISAAC-ROS/.github/blob/main/profile/realsense-setup.md#camera-compatibility).
 2. [Intel RealSense firmware](https://dev.intelrealsense.com/docs/firmware-releases) (tested with release 5.13, FW version 5.13.0.50, SDK version 2.52.1).
 
-**Requirements — Jetson Orin Nano:**
+**Requirements, Jetson Orin Nano:**
 
 1. [Jetson Orin Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit).
-2. [NVIDIA JetPack SDK](https://developer.nvidia.com/embedded/jetpack) — tested with JetPack 5.1.2 using both the SD card image and the NVIDIA SDK Manager methods; the latter is smoother and reflashes the QSPI, which can help with boot issues.
+2. [NVIDIA JetPack SDK](https://developer.nvidia.com/embedded/jetpack), tested with JetPack 5.1.2 using both the SD card image and the NVIDIA SDK Manager methods; the latter is smoother and reflashes the QSPI, which can help with boot issues.
 3. A [PCIe SSD](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common/blob/main/docs/dev-env-setup_jetson.md) as optional storage.
 4. [Isaac ROS development environment](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common/blob/main/docs/dev-env-setup.md).
 5. [Isaac ROS Nvblox](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox/blob/main/README.md#quickstart).
-6. [Isaac ROS RealSense](https://github.com/NVIDIA-ISAAC-ROS/.github/blob/main/profile/realsense-setup.md) (compatible with selective devices — tested with the Intel RealSense D435i).
+6. [Isaac ROS RealSense](https://github.com/NVIDIA-ISAAC-ROS/.github/blob/main/profile/realsense-setup.md) (compatible with selective devices, tested with the Intel RealSense D435i).
 7. [Isaac ROS Visual SLAM](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam.git) and [Isaac ROS NITROS](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nitros) for hardware-accelerated [RealSense camera-based reconstruction](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox/blob/main/docs/tutorial-realsense.md).
 8. VNC server (tested with [x11vnc](https://wiki.archlinux.org/title/x11vnc)).
 
-**Requirements — remote PC:**
+**Requirements, remote PC:**
 
 1. [ROS 2 Foxy Fitzroy](https://docs.ros.org/en/foxy/Installation/Alternatives/Ubuntu-Development-Setup.html) on [Ubuntu 20.04 Focal Fossa](https://releases.ubuntu.com/focal/).
 2. A VNC client (tested with [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)).
@@ -119,7 +119,7 @@ We tested the Isaac ROS Nvblox packages (ROS 2 Humble) on a TurtleBot3 Burger (r
 
 1. Set up the TurtleBot3 robot by referring to the [official instructions](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/) (we tested with ROS 2 Foxy). The exact ROS 2 packages for TurtleBot3 that we used are available [here](https://github.com/Tinker-Twins/TurtleBot3/tree/ROS2-Foxy). Note that LIDAR is **not** required for this project, so any hardware or software setup pertaining to the LIDAR can be skipped. If you have a pre-assembled robot, you must dismantle the LIDAR unit (the USB2LDS interface board and related software packages may be left untouched, since their presence or absence will not affect this project). Verify that you can remote-SSH into the robot and teleoperate it from a remote PC.
 
-2. Additional physical assembly includes mounting the Jetson Orin Nano Developer Kit (with PCIe SSD installed) and the RealSense D435i depth camera module (flashed with firmware 5.13.0.50) on the top "waffle plate" of the robot — connect the camera to the Jetson using a USB A-C cable. A battery pack rated 9–24 V capable of delivering 15 W continuously to the Orin Nano (we used an 11.1 V 5000 mAh LiPo) should be assembled between the first (base) and second waffle plates and hooked up to the input of a DC-DC buck converter (we used a 12 V 10 A adjustable CC-CV buck converter) mounted on the second waffle plate beside the TurtleBot3 SBC (a Raspberry Pi), to ensure stable power delivery. The buck converter output (9–20 V) connects to the female barrel DC jack on the Jetson Orin Nano.
+2. Additional physical assembly includes mounting the Jetson Orin Nano Developer Kit (with PCIe SSD installed) and the RealSense D435i depth camera module (flashed with firmware 5.13.0.50) on the top "waffle plate" of the robot. Connect the camera to the Jetson using a USB A-C cable. A battery pack rated 9–24 V capable of delivering 15 W continuously to the Orin Nano (we used an 11.1 V 5000 mAh LiPo) should be assembled between the first (base) and second waffle plates and hooked up to the input of a DC-DC buck converter (we used a 12 V 10 A adjustable CC-CV buck converter) mounted on the second waffle plate beside the TurtleBot3 SBC (a Raspberry Pi), to ensure stable power delivery. The buck converter output (9–20 V) connects to the female barrel DC jack on the Jetson Orin Nano.
 
 3. Flash the Jetson Orin Nano Developer Kit's SD card using the [conventional image method](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit#write) or the [SDK Manager](https://docs.nvidia.com/sdk-manager/install-with-sdkm-jetson/index.html). We were successful with the SD card method, so the remainder of this article follows that approach (also available [here](https://github.com/Tinker-Twins/NVIDIA-Isaac-ROS-Nvblox/blob/main/docs/tutorial-realsense.md)).
 
@@ -157,7 +157,7 @@ user@turtlebot:~$ ros2 run turtlebot3_teleop teleop_keyboard
 
 4. Use a VNC client to connect to the VNC server running on the Jetson Orin Nano.
 
-5. Launch the Docker container using the `run_dev.sh` script — the `ISAAC_ROS_WS` environment variable takes care of the correct path depending on the SD card or SSD setup. This step requires internet access to build and launch the container properly:
+5. Launch the Docker container using the `run_dev.sh` script. The `ISAAC_ROS_WS` environment variable takes care of the correct path depending on the SD card or SSD setup. This step requires internet access to build and launch the container properly:
 
 ```bash
 user@jetson:~$ cd ${ISAAC_ROS_WS}/src/isaac_ros_common && ./scripts/run_dev.sh ${ISAAC_ROS_WS}
@@ -232,4 +232,4 @@ The following video shows an end-to-end demonstration of the robot performing re
 <iframe src="https://www.youtube.com/embed/EDQiwWbjnws" title="Autonomous navigation with live 3D scene reconstruction" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
 </div></div>
 
-**Acknowledgement:** Thanks to [Aditya Krovi](https://www.linkedin.com/in/adikrovi/), [Anish Ghana](https://www.linkedin.com/in/anish-ghana-890024288/), [Jacob Likins](https://www.linkedin.com/in/jacob-likins-2b815224b/) and [Andrew Ko](https://www.linkedin.com/in/andrew-ko-4b491b224/) — undergraduate interns in ARMLab who helped set up the VEX AI arena both in Isaac Sim and in the real world.
+**Acknowledgement:** Thanks to [Aditya Krovi](https://www.linkedin.com/in/adikrovi/), [Anish Ghana](https://www.linkedin.com/in/anish-ghana-890024288/), [Jacob Likins](https://www.linkedin.com/in/jacob-likins-2b815224b/) and [Andrew Ko](https://www.linkedin.com/in/andrew-ko-4b491b224/), undergraduate interns in ARMLab who helped set up the VEX AI arena both in Isaac Sim and in the real world.

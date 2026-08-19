@@ -12,7 +12,7 @@ stack: ["LIO-SAM", "ROS", "Velodyne VLP-16", "Unitree Go1"]
 
 ## The problem
 
-LIO-SAM fuses LiDAR and IMU into odometry and a map, and it does it well — on platforms that move
+LIO-SAM fuses LiDAR and IMU into odometry and a map, and it does it well, on platforms that move
 smoothly. A quadruped doesn't. Every footfall is an impulse through the sensor mount, the IMU sees
 gait periodicity that has nothing to do with the robot's actual trajectory, and the point cloud is
 being swept by a sensor that is bobbing in three axes.
@@ -20,7 +20,7 @@ being swept by a sensor that is bobbing in three axes.
 ## What I did
 
 Integrated a Velodyne VLP-16 on a Unitree Go1 and brought up the full stack: drivers, the transform
-tree, and the launch pipeline that ties them together. Then the real work — tuning LIO-SAM's
+tree, and the launch pipeline that ties them together. Then the real work of tuning LIO-SAM's
 parameters for a legged platform instead of the wheeled ones its defaults assume.
 
 {% include video.html src="lio-sam-go1" caption="LIO-SAM running on the Go1: LiDAR-inertial odometry and live map construction during a walk." %}

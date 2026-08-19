@@ -14,5 +14,5 @@ bibtex: |
   }
 ---
 
-Reinforcement learning applied to active vibration control in meta-structures — my first published
+Reinforcement learning applied to active vibration control in meta-structures. My first published
 use of RL, from before the robotics work, and where the interest in learned control started.

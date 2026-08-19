@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Dhruv Mehta"
 title_separator          : "·"
 name                     : &name "Dhruv Mehta"
-description              : &description "Roboticist working across physical AI — reinforcement learning for ground and legged robots, vision transformers on edge hardware, and vision-language-action models for instruction-driven autonomy. PhD, Clemson University."
+description              : &description "Roboticist working across physical AI: reinforcement learning for ground and legged robots, vision transformers on edge hardware, and vision-language-action models for instruction-driven autonomy. PhD, Clemson University."
 url                      : https://dhruvkm.dev # the base hostname & protocol for your site
 
 # Endpoint the /contact/ form posts to (Formspree, Web3Forms, Getform, ...).
