@@ -37,5 +37,5 @@ NVIDIA's robotics team on an integration, and demoed autonomous vehicles to the 
 Innoventure and Auto Tech Day. Explaining a system to someone who doesn't share your vocabulary is
 its own engineering skill, and it's one I've deliberately practiced.
 
-If you're working on something in this space, whether that's hiring, collaborating, or just being
-stuck on a problem that won't behave, [say hello](/contact/). I'm always happy to talk shop.
+If you're working on something in this space, whether that's collaborating, comparing notes, or just
+being stuck on a problem that won't behave, [say hello](/contact/). I'm always happy to talk shop.
