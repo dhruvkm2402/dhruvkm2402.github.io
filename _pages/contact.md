@@ -1,7 +1,7 @@
 ---
 layout: wide
 title: "Get in touch"
-lede: "Hiring, collaborating, or stuck on a problem that won't behave. I'm happy to hear from you."
+lede: "Collaborating, comparing notes, or stuck on a problem that won't behave. I'm happy to hear from you."
 permalink: /contact/
 narrow: true
 ---
