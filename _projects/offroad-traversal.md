@@ -2,7 +2,7 @@
 title: "Agile Off-Road Traversal of an Ackermann-Steered Platform"
 order: 3
 featured: true
-badge: "IFAC MECC"
+badge: "IFAC 2025"
 video: offroad-traversal
 summary: "Goal-to-goal navigation learned end-to-end for a mid-scale off-road vehicle, with reward shaping tuned for stability rather than raw speed."
 lede: "Give the vehicle a goal pose in rough terrain and let it work out how to get there, without a hand-designed motion plan in the middle."
@@ -10,7 +10,9 @@ period: "2023 – 2024"
 where: "ARM Lab, Clemson University (CU-ICAR)"
 role: "Lead author. Environment authoring, reward design, training and evaluation."
 authors: "D. Mehta, A. Salvi, V. Krovi"
-venue: "IFAC-PapersOnLine (Modeling, Estimation and Control Conference), Vol. 59(3), pp. 79–84"
+venue: "IFAC-PapersOnLine, Vol. 59(3), pp. 79–84"
+doi: "https://doi.org/10.1016/j.ifacol.2025.07.014"
+doi_label: "Read the paper"
 stack: ["Isaac Gym", "PyTorch", "Reinforcement learning"]
 results:
   - value: "86%"
@@ -40,4 +42,4 @@ environment so robustness was trained rather than assumed.
 ## Result
 
 An **86% success rate** at reaching the desired goal across the evaluation set. Published in
-IFAC-PapersOnLine through the Modeling, Estimation and Control Conference.
+IFAC-PapersOnLine, Vol. 59(3), pp. 79-84.

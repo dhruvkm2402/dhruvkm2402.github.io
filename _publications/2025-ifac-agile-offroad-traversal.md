@@ -1,20 +1,24 @@
 ---
 title: "Agile Off-Road Terrain Traversal of an Ackermann Steered Platform using Deep Reinforcement Learning"
 authors: "D. Mehta, A. Salvi, V. Krovi"
-venue: "IFAC-PapersOnLine (Modeling, Estimation and Control Conference), Vol. 59(3), pp. 79–84"
-date: 2025-01-15
+venue: "IFAC-PapersOnLine, Vol. 59(3), pp. 79–84"
+date: 2025-07-01
 category: conferences
+doi: "https://doi.org/10.1016/j.ifacol.2025.07.014"
+doi_label: "ScienceDirect"
 project: "/projects/offroad-traversal/"
+redirect_from:
+  - /publications/2025-mecc-agile-offroad-traversal/
 bibtex: |
   @article{mehta2025offroad,
-    author  = {Mehta, Dhruv and Salvi, Ameya and Krovi, Venkat},
+    author  = {Mehta, Dhruv K. and Salvi, Ameya and Krovi, Venkat},
     title   = {Agile Off-Road Terrain Traversal of an Ackermann Steered Platform using Deep Reinforcement Learning},
     journal = {IFAC-PapersOnLine},
     volume  = {59},
     number  = {3},
     pages   = {79--84},
     year    = {2025},
-    note    = {Modeling, Estimation and Control Conference (MECC)}
+    doi     = {10.1016/j.ifacol.2025.07.014}
   }
 ---
 

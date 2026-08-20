@@ -47,7 +47,7 @@ redirect_from:
       <li>Dissertation: <em>Hybrid Learning for Rough Terrain Navigation of Actively Articulated Wheeled Vehicles</em>.</li>
       <li>Coordinated payload transport with biped-wheeled robots, using a single DRL agent to control both, transferred zero-shot to hardware (<a href="/projects/payload-transport/">project</a>, ICRA 2025).</li>
       <li>Hybrid deep reinforcement learning for rough-terrain path tracking, validated to 98.5% precision on unseen real tracks (<a href="/projects/rough-terrain-hdrl/">project</a>, AIM 2024).</li>
-      <li>Agile off-road terrain traversal with learned goal-to-goal navigation, 86% goal success (<a href="/projects/offroad-traversal/">project</a>, IFAC MECC).</li>
+      <li>Agile off-road terrain traversal with learned goal-to-goal navigation, 86% goal success (<a href="/projects/offroad-traversal/">project</a>, IFAC 2025).</li>
       <li>Real-time 3D scene reconstruction with NVIDIA Isaac ROS Nvblox, in collaboration with the NVIDIA Robotics team (<a href="/projects/nvblox-reconstruction/">project</a>).</li>
       <li>Operationalized Isaac Bi3D freespace segmentation on the Palmetto HPC cluster and on a Clearpath Husky (<a href="/projects/bi3d-freespace/">project</a>).</li>
       <li>LiDAR-inertial odometry and mapping on a Unitree Go1 quadruped using LIO-SAM (<a href="/projects/lio-sam-quadruped/">project</a>).</li>

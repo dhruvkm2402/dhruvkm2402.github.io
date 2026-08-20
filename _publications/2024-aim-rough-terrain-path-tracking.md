@@ -5,7 +5,8 @@ venue: "IEEE/ASME International Conference on Advanced Intelligent Mechatronics 
 date: 2024-07-15
 category: conferences
 paperurl: "/files/RoughTerrain_Ackerman_HybridDRL___Dhruv_Ameya_AIM2024_FinalV1.pdf"
-doi: "https://ieeexplore.ieee.org/abstract/document/10636992"
+doi: "https://doi.org/10.1109/AIM55361.2024.10636992"
+doi_label: "IEEE Xplore"
 code: "https://github.com/dhruvkm2402/Hybrid_Deep_Reinforcement_Learning_RoughTerrain"
 project: "/projects/rough-terrain-hdrl/"
 bibtex: |
@@ -14,7 +15,8 @@ bibtex: |
     title     = {Rough Terrain Path Tracking of an Ackermann Steered Platform using Hybrid Deep Reinforcement Learning},
     booktitle = {IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)},
     pages     = {685--690},
-    year      = {2024}
+    year      = {2024},
+    doi       = {10.1109/AIM55361.2024.10636992}
   }
 ---
 

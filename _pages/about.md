@@ -6,7 +6,7 @@ hide_title: true
 eyebrow: "Robotics & Physical AI"
 heading: "Dhruv Mehta, PhD"
 lede: "I'm a roboticist at heart. I've spent the last few years teaching machines to move and to understand what they're looking at: reinforcement learning policies for wheeled and legged robots, vision transformers running on hardware small enough to ride along, and vision-language-action models that let you just tell a robot what you want."
-sub: "I like the whole of it: the training run, the simulator, the perception model, the edge device, and the robot that has to work on a Tuesday afternoon with someone watching. Today that's digital twins and instruction-driven autonomy at Arrive AI. Before it, a PhD at Clemson's ARM Lab and work published at ICRA, IEEE/ASME AIM and IFAC MECC."
+sub: "I like the whole of it: the training run, the simulator, the perception model, the edge device, and the robot that has to work on a Tuesday afternoon with someone watching. Today that's digital twins and instruction-driven autonomy at Arrive AI. Before it, a PhD at Clemson's ARM Lab and work published at ICRA, IEEE/ASME AIM and IFAC."
 about_title: "A bit about me"
 redirect_from:
   - /about/

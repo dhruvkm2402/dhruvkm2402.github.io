@@ -29,7 +29,7 @@ permalink: /publications/
         <div class="pub__links">
           {% if paper.paperurl %}<a class="button button--small" href="{{ paper.paperurl | prepend: base_path }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
           {% if paper.preprinturl %}<a class="button button--small" href="{{ paper.preprinturl | prepend: base_path }}">Preprint</a>{% endif %}
-          {% if paper.doi %}<a class="button button--small" href="{{ paper.doi }}" rel="noopener">IEEE Xplore</a>{% endif %}
+          {% if paper.doi %}<a class="button button--small" href="{{ paper.doi }}" rel="noopener">{{ paper.doi_label | default: "Publisher page" }}</a>{% endif %}
           {% if paper.code %}<a class="button button--small" href="{{ paper.code }}" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% endif %}
           {% if paper.project %}<a class="button button--small" href="{{ paper.project | prepend: base_path }}">Project page</a>{% endif %}
           {% if paper.bibtex %}
