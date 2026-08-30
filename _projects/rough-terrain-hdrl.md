@@ -2,7 +2,7 @@
 title: "Rough-Terrain Path Tracking with Hybrid Deep Reinforcement Learning"
 order: 2
 featured: true
-badge: "IEEE/ASME AIM 2024"
+badge: "IEEE AIM 2024"
 video: rough-terrain-sim
 summary: "A model-based controller and a learned policy working together, so an Ackermann-steered vehicle tracks a path across terrain neither was tuned for."
 lede: "Classical control is predictable but brittle on terrain it wasn't designed for. Learning is adaptable but hard to trust. This work puts them in the same loop."
@@ -10,7 +10,7 @@ period: "2022 – 2024"
 where: "ARM Lab, Clemson University (CU-ICAR)"
 role: "Lead author. Framework design, terrain authoring, training and real-world validation."
 authors: "D. Mehta, A. Salvi, V. Krovi"
-venue: "IEEE/ASME AIM 2024, pp. 685–690"
+venue: "IEEE AIM 2024, pp. 685–690"
 stack: ["Isaac Gym", "PyTorch", "Blender", "OpenUSD", "ROS"]
 code: "https://github.com/dhruvkm2402/Hybrid_Deep_Reinforcement_Learning_RoughTerrain"
 paper: "/files/RoughTerrain_Ackerman_HybridDRL___Dhruv_Ameya_AIM2024_FinalV1.pdf"
@@ -60,6 +60,6 @@ tracking its path across an actual grass slope, not a rendered one.
 
 ## Where it landed
 
-Published at the 2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics
+Published at the 2024 IEEE International Conference on Advanced Intelligent Mechatronics
 (pp. 685–690). The work also became the core of my dissertation, *Hybrid Learning for Rough Terrain
 Navigation of Actively Articulated Wheeled Vehicles*.
