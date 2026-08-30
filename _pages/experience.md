@@ -17,10 +17,11 @@ redirect_from:
     <p class="tl__org">Arrive AI Inc. · Fishers, Indiana</p>
     <ul>
       <li>Building a digital twin simulation environment at scale in NVIDIA Isaac Sim for scenario testing before real-world deployment.</li>
-      <li>Developing the autonomy architecture for a mobile robot platform, integrating reinforcement learning policies with vision-language (VLM) and vision-language-action (VLA) models, including deploying open VLA models such as OpenVLA and OpenPI, for instruction-driven tasks.</li>
+      <li>Training reinforcement learning policies, continuing the line of work my PhD was built on.</li>
+      <li>Standing up and evaluating open vision-language (VLM) and vision-language-action (VLA) models such as OpenVLA and OpenPI as a separate workstream.</li>
       <li>Evaluating and optimizing vision transformers for real-time perception, accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT.</li>
       <li>Profiling edge devices for inference latency and throughput trade-offs across Jetson Orin Nano, Orin AGX and Thor (Blackwell), plus Qualcomm IQ9075 and Infineon Technologies hardware.</li>
-      <li>Architecting a containerized AI inference codebase with Docker for repeatable deployment, working with the platform team on k3s fleet rollout, and building the web frontend for low-latency WebRTC video streaming.</li>
+      <li>Architecting a containerized AI inference codebase with Docker for repeatable deployment, working with the platform team on the k3s side, and building the web frontend for low-latency WebRTC video streaming.</li>
     </ul>
   </li>
 
