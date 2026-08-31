@@ -23,9 +23,8 @@ front of someone.
 **Reinforcement learning.** Continuing the policy-training work my PhD was built on, which remains
 the thread I know best.
 
-**Vision-language-action models.** A separate line of work, running in parallel rather than wired
-into the reinforcement learning: getting open VLM and VLA models such as OpenVLA and OpenPI stood up
-and evaluated, to understand where they hold up and where they don't.
+**Vision-language-action models.** Standing up and evaluating open VLM and VLA models such as
+OpenVLA and OpenPI.
 
 **Perception and inference.** Evaluating and optimizing vision transformers for real-time perception,
 accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT.

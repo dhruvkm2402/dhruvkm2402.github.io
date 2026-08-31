@@ -18,7 +18,7 @@ redirect_from:
     <ul>
       <li>Building a digital twin simulation environment at scale in NVIDIA Isaac Sim for scenario testing before real-world deployment.</li>
       <li>Training reinforcement learning policies, continuing the line of work my PhD was built on.</li>
-      <li>Standing up and evaluating open vision-language (VLM) and vision-language-action (VLA) models such as OpenVLA and OpenPI as a separate workstream.</li>
+      <li>Standing up and evaluating open vision-language (VLM) and vision-language-action (VLA) models such as OpenVLA and OpenPI.</li>
       <li>Evaluating and optimizing vision transformers for real-time perception, accelerating inference with NVIDIA Triton, the DeepStream SDK and TensorRT.</li>
       <li>Profiling edge devices for inference latency and throughput trade-offs across Jetson Orin Nano, Orin AGX and Thor (Blackwell), plus Qualcomm IQ9075 and Infineon Technologies hardware.</li>
       <li>Architecting a containerized AI inference codebase with Docker for repeatable deployment, working with the platform team on the k3s side, and building the web frontend for low-latency WebRTC video streaming.</li>
