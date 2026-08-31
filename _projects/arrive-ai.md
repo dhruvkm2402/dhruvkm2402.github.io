@@ -20,8 +20,7 @@ tested before anything reaches the real world. This is the part of my research I
 doing. A simulator earns its keep when it catches a failure that would otherwise have happened in
 front of someone.
 
-**Reinforcement learning.** Continuing the policy-training work my PhD was built on, which remains
-the thread I know best.
+**Reinforcement learning.** Continuing the policy-training work my PhD was built on.
 
 **Vision-language-action models.** Standing up and evaluating open VLM and VLA models such as
 OpenVLA and OpenPI.
